@@ -1,0 +1,453 @@
+Num : 0 ----  pck_size
+52      15960
+40      15548
+60       7814
+1420     3535
+69       3424
+        ...  
+1403        1
+1135        1
+992         1
+1346        1
+850         1
+Name: pck_size, Length: 933, dtype: int64
+Max : 1500
+Min : 0
+Mean : 228.77898300236012
+
+
+
+
+
+Num : 1 ----  Ether_type
+2048     81804
+34958      988
+34525      977
+0          125
+Name: Ether_type, dtype: int64
+Max : 34958
+Min : 0
+Mean : 2810.737609364198
+
+
+
+
+
+Num : 2 ----  LLC_ctrl
+0      83769
+175      125
+Name: LLC_ctrl, dtype: int64
+Max : 175
+Min : 0
+Mean : 0.26074570291081606
+
+
+
+
+
+Num : 3 ----  EAPOL_version
+0    82906
+1      940
+2       48
+Name: EAPOL_version, dtype: int64
+Max : 2
+Min : 0
+Mean : 0.012348916489856247
+
+
+
+
+
+Num : 4 ----  EAPOL_type
+0    82906
+3      988
+Name: EAPOL_type, dtype: int64
+Max : 3
+Min : 0
+Mean : 0.03533029775669297
+
+
+
+
+
+Num : 5 ----  IP_ihl
+5    80275
+0     2090
+6     1529
+Name: IP_ihl, dtype: int64
+Max : 6
+Min : 0
+Mean : 4.893663432426633
+
+
+
+
+
+Num : 6 ----  IP_tos
+0      81818
+192     1551
+16       510
+8         10
+200        5
+Name: IP_tos, dtype: int64
+Max : 200
+Min : 0
+Mean : 3.659761127136625
+
+
+
+
+
+Num : 7 ----  IP_len
+52      15960
+40      15548
+60       7814
+1420     3535
+69       3424
+        ...  
+1103        1
+520         1
+671         1
+774         1
+193         1
+Name: IP_len, Length: 928, dtype: int64
+Max : 1500
+Min : 0
+Mean : 226.609066202589
+
+
+
+
+
+Num : 8 ----  IP_flags
+3    76110
+2     5694
+1     2090
+Name: IP_flags, dtype: int64
+Max : 3
+Min : 1
+Mean : 2.882303859632393
+
+
+
+
+
+Num : 9 ----  IP_DF
+1    76110
+0     7784
+Name: IP_DF, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.9072162490762152
+
+
+
+
+
+Num : 10 ----  IP_ttl
+64     61286
+255    12682
+1       2616
+4       2570
+0       2090
+63      1721
+128      929
+Name: IP_ttl, dtype: int64
+Max : 255
+Min : 0
+Mean : 88.16417145445443
+
+
+
+
+
+Num : 11 ----  IP_options
+0    82365
+1     1529
+Name: IP_options, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.018225379645743438
+
+
+
+
+
+Num : 12 ----  ICMP_code
+0    83840
+1       49
+3        5
+Name: ICMP_code, dtype: int64
+Max : 3
+Min : 0
+Mean : 0.0007628674279447874
+
+
+
+
+
+Num : 13 ----  TCP_dataofs
+8     29600
+0     26207
+5     20709
+10     7283
+6        81
+11       14
+Name: TCP_dataofs, dtype: int64
+Max : 11
+Min : 0
+Mean : 4.932593510858941
+
+
+
+
+
+Num : 14 ----  TCP_FIN
+0    78050
+1     5844
+Name: TCP_FIN, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.0696593320142084
+
+
+
+
+
+Num : 15 ----  TCP_ACK
+1    52025
+0    31869
+Name: TCP_ACK, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.6201277802941807
+
+
+
+
+
+Num : 16 ----  TCP_window
+0        27400
+3754     14558
+8440      5805
+2920      5373
+28960     3250
+         ...  
+10179        2
+8304         2
+8228         1
+16136        1
+1309         1
+Name: TCP_window, Length: 176, dtype: int64
+Max : 65535
+Min : 0
+Mean : 6299.586871528357
+
+
+
+
+
+Num : 17 ----  UDP_len
+0      61406
+56      1315
+48       887
+44       793
+218      783
+       ...  
+84         1
+312        1
+406        1
+107        1
+167        1
+Name: UDP_len, Length: 260, dtype: int64
+Max : 652
+Min : 0
+Mean : 55.312549169189694
+
+
+
+
+
+Num : 18 ----  DHCP_options
+0    82715
+1      515
+3      498
+5       80
+2       72
+7       10
+6        4
+Name: DHCP_options, dtype: int64
+Max : 7
+Min : 0
+Mean : 0.03155172002765395
+
+
+
+
+
+Num : 19 ----  BOOTP_hlen
+0    82715
+6     1179
+Name: BOOTP_hlen, dtype: int64
+Max : 6
+Min : 0
+Mean : 0.0843206903950223
+
+
+
+
+
+Num : 20 ----  BOOTP_flags
+1    82715
+2      780
+3      399
+Name: BOOTP_flags, dtype: int64
+Max : 3
+Min : 1
+Mean : 1.0188094500202636
+
+
+
+
+
+Num : 21 ----  BOOTP_sname
+0    82715
+1     1179
+Name: BOOTP_sname, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.014053448399170382
+
+
+
+
+
+Num : 22 ----  BOOTP_file
+0    82715
+1     1179
+Name: BOOTP_file, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.014053448399170382
+
+
+
+
+
+Num : 23 ----  BOOTP_options
+0    82715
+1     1179
+Name: BOOTP_options, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.014053448399170382
+
+
+
+
+
+Num : 24 ----  DNS_qr
+0    78225
+1     5669
+Name: DNS_qr, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.06757336639092187
+
+
+
+
+
+Num : 25 ----  DNS_rd
+0    80490
+1     3404
+Name: DNS_rd, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.04057501132381339
+
+
+
+
+
+Num : 26 ----  DNS_qdcount
+0    76647
+1     4505
+2     1485
+4      870
+6      189
+3      144
+5       54
+Name: DNS_qdcount, dtype: int64
+Max : 6
+Min : 0
+Mean : 0.15246620735690275
+
+
+
+
+
+Num : 27 ----  dport_class
+12    21053
+5     16963
+7     13300
+13     9674
+9      9512
+1      3719
+8      3689
+2      3406
+6      1286
+3      1023
+11      161
+4       108
+Name: dport_class, dtype: int64
+Max : 13
+Min : 1
+Mean : 8.283691324766968
+
+
+
+
+
+Num : 28 ----  payload_bytes
+0       34929
+6        3485
+17       3262
+1380     2861
+48       1382
+        ...  
+1121        1
+574         1
+232         1
+913         1
+391         1
+Name: payload_bytes, Length: 907, dtype: int64
+Max : 1448
+Min : 0
+Mean : 187.04910959067394
+
+
+
+
+
+Num : 29 ----  entropy
+0.000000    38883
+3.616875     3260
+2.216917      932
+1.806780      700
+3.474938      675
+            ...  
+4.767875        1
+4.772061        1
+5.166403        1
+4.770445        1
+5.123301        1
+Name: entropy, Length: 13841, dtype: int64
+Max : 7.88660897116833
+Min : 0.0
+Mean : 2.512915758893955
+
+
+
+
+
