@@ -22,6 +22,4 @@ def view2d(disc, xlabel, ylabel, a, b, step=1.0):
 	plt.ylabel(ylabel)
 	plt.colorbar()
 	plt.show()
-
-def view4d(disc, labels, a, b, step=1.0):
     

@@ -7,6 +7,28 @@ from tqdm import tqdm
 from viewer import view2d
 
 
+"""
+Features : 2
+
+Num : 2 ----  LLC_ctrl
+0      83769
+175      125  mapped to 1
+Name: LLC_ctrl, dtype: int64
+Max : 175
+Min : 0
+Mean : 0.26074570291081606
+
+
+Num : 3 ----  EAPOL_version
+0    82906
+1      940
+2       48 mapped to 0.5
+Name: EAPOL_version, dtype: int64
+Max : 2
+Min : 0
+Mean : 0.012348916489856247
+"""
+
 class Gan2Data(Dataset):
     def __init__(self,path,transform=None):
         self.csv = pd.read_csv(path, index_col=0)
@@ -80,7 +102,7 @@ lr = 0.01
 batch_size=128
 criterion = nn.BCEWithLogitsLoss()
 z_dim = 4
-dataset = Gan2Data("./gan2field.csv", normalizer)
+dataset = Gan2Data("./llc-eaopl.csv", normalizer)
 dataset = DataLoader(dataset, shuffle = True, batch_size=batch_size, drop_last=True)
 
 
@@ -97,13 +119,12 @@ mean_gen_losses = []
 cur_step = 1
 display_step = 500
 
-print(disc)
 p = int(input("Num:"))
 print(disc.disc[p].weight)
 
 sig = nn.Sigmoid()
 
-view2d(disc, "EAPOL_version", "LLC_ctrl", -0.5,1.5,0.05)
+view2d(disc, "EAPOL_version", "LLC_ctrl", -1,1.5,0.05)
 
 for epoch in range(epochs):
     for cur_batch in dataset:
@@ -144,12 +165,20 @@ for epoch in range(epochs):
         if cur_step%100 == 0:
             print(cur_step)
         if cur_step%2000==0:
-            view2d(disc, -1,2.5,0.07)
+            view2d(disc, "EAPOL_version", "LLC_ctrl", -1, 2.5 , 0.07)
             save = input("Save(Y/N): ")
             if save.lower() == "y":
-                torch.save(disc.state_dict(), "./versions/03_disc_model.pt")
-                torch.save(disc_opt.state_dict(), "./versions/03_disc_opt.pt")
-                torch.save(gen.state_dict(), "./versions/03_gen_model.pt")
-                torch.save(gen_opt.state_dict(), "./versions/03_gen_opt.pt")
+                torch.save(disc.state_dict(), "./versions/04_disc_model.pt")
+                torch.save(disc_opt.state_dict(), "./versions/04_disc_opt.pt")
+                torch.save(gen.state_dict(), "./versions/04_gen_model.pt")
+                torch.save(gen_opt.state_dict(), "./versions/04_gen_opt.pt")
         cur_step += 1
+
+view2d(disc, "EAPOL_version", "LLC_ctrl", -1, 2.5 , 0.07)
+save = input("Save(Y/N): ")
+if save.lower() == "y":
+    torch.save(disc.state_dict(), "./versions/04_disc_model.pt")
+    torch.save(disc_opt.state_dict(), "./versions/04_disc_opt.pt")
+    torch.save(gen.state_dict(), "./versions/04_gen_model.pt")
+    torch.save(gen_opt.state_dict(), "./versions/04_gen_opt.pt")
 

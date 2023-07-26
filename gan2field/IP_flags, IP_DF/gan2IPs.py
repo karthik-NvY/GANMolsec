@@ -6,6 +6,26 @@ from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 from viewer import view2d
 
+# Features:2
+"""
+Num : 8 ----  IP_flags
+3    76110
+2     5694
+1     2090
+Name: IP_flags, dtype: int64
+Max : 3
+Min : 1
+Mean : 2.882303859632393
+
+Num : 9 ----  IP_DF
+1    76110
+0     7784
+Name: IP_DF, dtype: int64
+Max : 1
+Min : 0
+Mean : 0.9072162490762152
+"""
+
 
 class Gan2Data(Dataset):
     def __init__(self,path,transform=None):
@@ -82,7 +102,7 @@ lr = 0.01
 batch_size=128
 criterion = nn.BCEWithLogitsLoss()
 z_dim = 4
-dataset = Gan2Data("./gan2fieldV2.csv", normalizer)
+dataset = Gan2Data("./IPs.csv", normalizer)
 dataset = DataLoader(dataset, shuffle = True, batch_size=batch_size, drop_last=True)
 
 
@@ -100,6 +120,8 @@ mean_disc_losses = []
 mean_gen_losses = []
 cur_step = 1
 display_step = 500
+
+print(disc_opt.state_dict()["param_groups"])
 
 print(disc)
 p = int(input("Num:"))

@@ -1,0 +1,75 @@
+pic 00
+---------------------
+Best version available
+Saved at ./versions/03_disc_model.pt
+Saved at ./versions/03_disc_opt.pt
+
+
+pic 01
+---------------------
+Epoch 6 : gen loss = 0.6975885560512542 -- disc loss = 0.693360959649086
+Sample : tensor([[ 0.0193, -0.0136]], grad_fn=<AddmmBackward0>)
+Disc out : 0.4996803104877472
+
+
+pic 02
+---------------------
+Epoch 8 : gen loss = 0.7006965409517288 -- disc loss = 0.6934394130706787
+Sample : tensor([[ 0.0189, -0.0118]], grad_fn=<AddmmBackward0>)
+Disc out : 0.49985644221305847
+
+
+
+pic 03
+---------------------
+Epoch 3 : gen loss = 3.30329510474205 -- disc loss = 0.028445609683170916
+Sample : tensor([[-0.0624,  3.9578]], grad_fn=<AddmmBackward0>)
+Disc out : 0.024366602301597595
+
+
+pic 04
+---------------------
+Epoch 6 : gen loss = 5.01051322555542 -- disc loss = 0.0033771714614704252
+Sample : tensor([[-5.4024, -2.8433]], grad_fn=<AddmmBackward0>)
+Disc out : 0.005472959019243717
+
+
+pic 05
+---------------------
+Epoch 9 : gen loss = 6.037986795425415 -- disc loss = 0.005451808351092041
+Sample : tensor([[ 3.9079, -8.5803]], grad_fn=<AddmmBackward0>)
+Disc out : 0.011578170582652092
+
+
+pic 06
+---------------------
+Epoch 12 : gen loss = 6.076127835273743 -- disc loss = 0.006410303694196045
+Sample : tensor([[-0.0142,  0.8379]], grad_fn=<AddmmBackward0>)
+Disc out : 0.001942014554515481
+
+
+pic 07
+---------------------
+Epoch 6 : gen loss = 5.039850151062011 -- disc loss = 0.007488563572987914
+Sample : tensor([[-0.4527,  0.5332]], grad_fn=<AddmmBackward0>)
+Disc out : 0.005599020980298519
+
+
+pic 08
+--------------------
+Epoch 12 : gen loss = 6.446930678367615 -- disc loss = 0.005177800709963776
+Sample : tensor([[-0.4586,  0.5296]], grad_fn=<AddmmBackward0>)
+Disc out : 0.0015077413991093636
+
+
+pic 09
+--------------------
+Epoch 14 : gen loss = 6.501359294891357 -- disc loss = 0.005733485618373379
+Sample : tensor([[-0.4626,  0.5373]], grad_fn=<AddmmBackward0>)
+Disc out : 0.0015224367380142212
+
+pic 10
+--------------------
+Epoch 3 : gen loss = 0.6950554012060165 -- disc loss = 0.6940002907514572
+Sample : tensor([[ 6.7584e-04, -4.1476e-05]], grad_fn=<AddmmBackward0>)
+Disc out : 0.49970799684524536

@@ -1,0 +1,21 @@
+pic 00:
+-----------------------
+Saved pic - best version recorded.
+../verions/04_disc_opt.pt
+../verions/04_disc_model.pt
+../verions/04_gen_opt.pt
+../verions/04_gen_model.pt
+
+
+pic 01:
+-----------------------
+Epoch 6 : gen loss = 4.560457284927368 -- disc loss = 0.0062063814289867875
+Sample : tensor([[0.3113, 2.3229]], grad_fn=<AddmmBackward0>)
+Disc out : 0.008957689628005028
+
+
+pic 02:
+-----------------------
+Epoch 9 : gen loss = 5.723034998893738 -- disc loss = 0.0019227929753251375
+Sample : tensor([[0.3200, 2.3222]], grad_fn=<AddmmBackward0>)
+Disc out : 0.0028554247692227364
