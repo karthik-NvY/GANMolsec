@@ -1,0 +1,45 @@
+Disc:
+-----
+optimizer ;  ./disc/1_disc_opt.pt
+model" ./disc/1_disc_model.pt
+
+
+gen0:
+-----
+optimizer : ./gen0/1_gen_opt.pt
+model : ./gen0/1_gen_model.pt
+
+gen1:
+-----
+optimizer : ./gen1/1_gen_opt.pt
+model : ./gen1/1_gen_model.pt
+
+gen2:
+-----
+optimizer : ./gen2/1_gen_opt.pt
+model : ./gen2/1_gen_model.pt
+
+gen3:
+-----
+optimizer : ./gen3/1_gen_opt.pt
+model : ./gen3/1_gen_model.pt
+
+gen4:
+-----
+optimizer : ./gen4/1_gen_opt.pt
+model : ./gen4/1_gen_model.pt
+
+gen5:
+-----
+optimizer : ./gen5/1_gen_opt.pt
+model : ./gen5/1_gen_model.pt
+
+gen6:
+-----
+optimizer : ./gen6/1_gen_opt.pt
+model : ./gen6/1_gen_model.pt
+
+gen7:
+-----
+optimizer : ./gen7/1_gen_opt.pt
+model : ./gen7/1_gen_model.pt
