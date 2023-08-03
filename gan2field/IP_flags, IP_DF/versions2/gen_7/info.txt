@@ -1,0 +1,3 @@
+Shift: IP_flags-0.84 IP_DF-0.84 
+gen 7 : tensor([[-2.0901, -3.1530]], grad_fn=<IndexAddBackward0>)
+Disc out : 0.045752327889204025
